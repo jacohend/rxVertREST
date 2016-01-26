@@ -4,6 +4,7 @@ Dockerfile and how to use the SQL cursor were given by https://github.com/vert-x
 
 How to run: 
 
-* Build docker image from dockerfile ('docker build -t <tag> .')
-* Run docker container with 'docker run -e DB_USER=user -e DB_PASS=pass -e DB_HOST=host -e DB_NAME=name -e SERVER_ENV=Production|Development|Testing -e APP_NAME=app -e SECRET_KEY=key -e SECURITY_PASSWORD_SALT=salt <tag>'
+- From the project directory, run ./gradlew shadowJar
+- Build docker image from dockerfile ('docker build -t <your_tag> .')
+- Run docker container with 'docker run -e DB_USER=user -e DB_PASS=pass -e DB_HOST=host -e DB_NAME=name -e SERVER_ENV=Production|Development|Testing -e APP_NAME=app -e SECRET_KEY=key -e SECURITY_PASSWORD_SALT=salt <your_tag>'
 
